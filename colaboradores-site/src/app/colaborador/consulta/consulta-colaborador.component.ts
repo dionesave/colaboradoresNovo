@@ -7,8 +7,8 @@ import { Colaborador } from 'src/app/services/colaborador';
  
 @Component({
     selector: 'app-consulta-colaboradores',
-    templateUrl: './consulta.component.html',
-    styleUrls:["./consulta.component.css"]
+    templateUrl: './consulta-colaborador.component.html',
+    styleUrls:["./consulta-colaborador.component.css"]
   })
   export class ConsultaColaboradorComponent implements OnInit {
  
