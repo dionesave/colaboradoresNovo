@@ -1,0 +1,26 @@
+<h3>{{titulo}}</h3>
+ 
+<table>
+    <thead>
+    <tr>
+        <th>Nome</th>
+        <th>Cargo</th>
+        <th>Departamento</th>
+        <th>Descrição</th>
+        <th>Localidade</th>
+    </tr>
+    </thead>
+ 
+    <tbody>
+        <tr *ngFor="let colaborador of colaboradores; let i = index;">
+        <td>{{ colaborador.nome }}</td>        
+        <td>{{ colaborador.cargo }}</td>        
+        <td>{{ colaborador.departamento }}</td> 
+        <td>{{ colaborador.localidade }}</td> 
+        <td>{{ colaborador.descricaoFuncao }}</td>   
+        </tr>
+        <tr>
+           <td colspan="6" style="text-align: right;">Total de Registros: {{ pessoas.length }}</td> 
+        </tr>
+    </tbody>
+</table>
