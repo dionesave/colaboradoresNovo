@@ -5,7 +5,7 @@ import { ConsultaColaboradorComponent } from './colaborador/consulta/consulta-co
 export const ROUTES: Routes = [
 
     { path: '', component: HomeComponent },
-    { path: '/consulta-colaborador', component: ConsultaColaboradorComponent}
+    { path: 'consulta-colaborador', component: ConsultaColaboradorComponent}
  //   { path: 'restaurants/:id', component: RestaurantDetailComponent},
 
 ]
