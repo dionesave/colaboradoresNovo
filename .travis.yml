@@ -15,7 +15,8 @@ before_deploy:
 deploy:
     provider: script
     script:
-        docker push dione2508/colaboradores-api;
+    docker tag colaboradores-api:latest "$DOCKER_USERNAME"/colaboradores-api:$TRAVIS_JOB_ID;
+        docker push "$DOCKER_USERNAME"/colaboradores-api;
     on:
         branch: master
 notifications:
