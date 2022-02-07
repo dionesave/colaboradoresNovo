@@ -16,8 +16,8 @@ deploy:
   provider: script
   script:
   docker tag colaboradores-api:latest "$DOCKER_USERNAME"/colaboradores-api:$TRAVIS_JOB_ID;
-      docker push "$DOCKER_USERNAME"/colaboradores-api;
+    docker push "$DOCKER_USERNAME"/colaboradores-api;
   on:
-      branch: master
+    branch: master
 notifications:
   email: false
