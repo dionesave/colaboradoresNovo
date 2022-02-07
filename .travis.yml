@@ -11,12 +11,12 @@ before_install:
 script:
   - docker-compose build
 before_deploy:
-  - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
+  - echo "Fordk@2021" | docker login --username "$DOCKER_USERNAME" --password-stdin
 deploy:
   provider: script
   script:
-    docker tag colaboradores-api:latest "$DOCKER_USERNAME"/docker-from-zero-to-mastery-java:$TRAVIS_JOB_ID;
-    docker push "$DOCKER_USERNAME"/colaboradores-api;
+    docker tag colaboradores-api:latest $DOCKER_USERNAME/colaboradores-api:$TRAVIS_JOB_ID;
+    docker push $DOCKER_USERNAME/colaboradores-api;
   on:
     branch: master
 notifications:
