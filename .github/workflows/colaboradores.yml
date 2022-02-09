@@ -7,7 +7,7 @@ on:
       - master
     paths:
       - colaboradores-api/**
-  pull_resuqest: # [master, next]
+  pull_request: # [master, next]
     paths:
       - colaboradores-api/**
 
