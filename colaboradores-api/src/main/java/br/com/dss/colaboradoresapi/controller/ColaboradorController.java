@@ -58,7 +58,6 @@ public class ColaboradorController {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}else {
 			colaboradorService.alterar(colaborador);
-			System.out.println("Só pra testar");
 			return new ResponseEntity<>(colaborador, HttpStatus.OK);
 		}
 	}
