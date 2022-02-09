@@ -17,9 +17,9 @@ services:
   colaboradores-api:
     image: dione2508/colaboradores-api
     restart: always
-    build:
-      context: .
-      dockerfile: colaboradores-api/Dockerfile
+    #build:
+    #  context: .
+    #  dockerfile: colaboradores-api/Dockerfile
     working_dir: /colaboradores-api
     environment:
       TZ: America/Sao_Paulo
